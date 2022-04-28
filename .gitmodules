@@ -1,0 +1,3 @@
+[submodule "valorant"]
+	path = valorant
+	url = git@github.com:Yta-ux/valorant.git
