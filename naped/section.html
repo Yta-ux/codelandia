@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/section.css">
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <a href="index.html" class="title logo">Naped</a>
+
+        <nav>
+            <ul class="menu">
+                <li class="menu-item">
+                    <a class="menu-link" href="index.html">Home</a>
+                    <div class="line"></div>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" data-title="Séries" href="section.html">Séries</a>
+                    <div class="line"></div>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" data-title="Filmes" href="section.html">Filmes</a>
+                    <div class="line"></div>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" data-title="Animes" href="section.html">Animes</a>
+                    <div class="line"></div>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" data-title="Games" href="section.html">Games</a>
+                    <div class="line"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <button type="button" class="account">Minha conta</button>
+    </header>
+
+    <main>
+        <section class="cover">
+            <h2 class="title cover-title"></h2>
+            <p class="cover-text">O Naped pode ser sua fonte de informações sobre o mundo nerd e outros assuntos
+                relacionados.</p>
+        </section>
+        <section class="search">
+            <input class="title search-input" type="search" placeholder="Quer ajuda na procura? Pesquise aqui">
+            <img class="search-icon" src="assets/images/search.svg" alt="ícone de lupa para fazer busca ">
+        </section>
+
+        <section class="catalogue"></section>
+
+        <section class="pagination">
+            <button class="pagination-button" type="button"><img src="assets/images/arrow-left.svg"
+                    alt="voltar"></button>
+            <button class="pagination-button" type="button">1</button>
+            <button class="pagination-button" type="button">2</button>
+            <button class="pagination-button" type="button">...</button>
+            <button class="pagination-button" type="button">9</button>
+            <button class="pagination-button" type="button">10</button>
+            <button class="pagination-button" type="button"><img src="assets/images/arrow-right.svg"
+                    alt="próximo"></button>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="title logo">Naped</div>
+        <p class="copyright">Todas as imagens de filmes, séries e etc são marcas registradas dos seus respectivos
+            proprietários.</p>
+    </footer>
+
+    <div class="modal">
+        <div class="wrapper">
+            <div class="content">
+                <p class="title content-text">No momento essa funcionalidade não está disponível</p>
+                <button type="button" class="content-btn">Fechar janela</button>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+
+    <script type="module" src="assets/js/section.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Sitemap: https://jordan-shoes-phi.vercel.app/sitemap.xml
+
+User-agent: *
+Allow: /

@@ -1,0 +1,84 @@
+main .cover {
+  margin-top: 9rem;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 8.3rem;
+  padding-bottom: 8.3rem;
+  padding-left: 4rem;
+  padding-right: 0;
+}
+main .cover-title {
+  position: inherit;
+  z-index: 1;
+  font-size: 4.8rem;
+  margin-bottom: 1.5rem;
+}
+main .cover-text {
+  position: inherit;
+  z-index: 2;
+  width: 50%;
+  font-size: 2rem;
+  line-height: 3.2rem;
+  font-weight: 500;
+  color: #c4c4c4;
+}
+main .cover:before {
+  content: "";
+  position: absolute;
+  background-color: blue;
+  inset: 0;
+  background: linear-gradient(0.01deg, #13131f 0.01%, rgba(19, 19, 31, 0) 99.99%);
+}
+main .search {
+  display: flex;
+  justify-content: space-between;
+  background-color: #282830;
+  padding: 1.5rem 2.5rem;
+  margin-top: 4.2rem;
+}
+main .search-input {
+  border: none;
+  background: transparent;
+  color: #fefbfb;
+  font-size: 2rem;
+  height: 30px;
+  width: calc(100% - 30px);
+  outline: none;
+}
+main .catalogue {
+  margin: 10rem 0 6.2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem 4.5rem;
+  justify-content: center;
+}
+main .pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+main .pagination-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: #282830;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  color: #c4c4c4;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border: 2px solid #282830;
+  transition: 0.2s;
+}
+main .pagination-button:hover {
+  border-color: #8257e6;
+  color: #8257e6;
+}
+
+/*# sourceMappingURL=section.css.map */

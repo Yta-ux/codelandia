@@ -1,0 +1,66 @@
+@use "variables" as *;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca&display=swap");
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: $gray-200;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: $purple-light;
+}
+
+.title {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+
+    &-line {
+        position: relative;
+        font-size: 2.4rem;
+        margin-bottom: 3.9rem;
+
+        .line {
+            position: absolute;
+            height: 3px;
+            width: 22%;
+            margin-top: 1.3rem;
+            background-color: $purple-light;
+        }
+    }
+}
+
+.logo {
+    flex: 1.5;
+    color: $purple-light;
+    font-size: 2.4rem;
+    text-decoration: none;
+}
+
+.recent {
+    margin-top: 10rem;
+    &-news {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+}
+
+.active{
+    overflow: hidden;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    background-color: $body-bg;
+    padding: 0 16rem;
+    color: $white;
+}

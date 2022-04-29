@@ -1,0 +1,4 @@
+Sitemap: https://yta-ux.github.io/login/sitemap.xml
+
+User-agent: *
+Allow: /

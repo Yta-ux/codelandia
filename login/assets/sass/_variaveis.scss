@@ -1,0 +1,22 @@
+$green-light: #04c35c;
+$purple-light: #2b6cb0;
+$purple-highlight: #0076fd;
+$white: #fff;
+$white-dark: #f7fafc;
+$gray: #1a202c;
+$gray-light: #e8e8e8;
+
+@mixin flex($align: null, $justify: null, $direction: null) {
+    display: flex;
+    @if $align {
+        align-items: $align;
+    }
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+}

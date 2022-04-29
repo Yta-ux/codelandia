@@ -1,0 +1,252 @@
+@use "./reset" as *;
+@use "./variaveis" as var;
+
+* {
+    @include reset;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.8rem;
+    background-color: var.$white-200;
+}
+
+.title {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 400;
+}
+
+.text {
+    color: var.$gray;
+}
+
+.btn {
+    font-weight: 700;
+    font-size: 2rem;
+    border: none;
+    color: var.$white;
+    background-color: var.$purple;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 0) {
+    header {
+        background-color: var.$purple-light;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 0 3.2rem;
+
+        .call {
+            width: 100%;
+            margin: 5.5rem 0 11.4rem;
+
+            .call-title {
+                font-size: 3.2rem;
+            }
+            .call-description {
+                font-size: 1.8rem;
+                line-height: 2;
+                margin: 1.8rem 0 3.2rem;
+            }
+
+            button {
+                padding: 1.4rem 5rem 1.2rem 5.1rem;
+            }
+        }
+
+        img {
+            max-width: 100%;
+            margin-bottom: 10rem;
+            animation: move 8s infinite alternate;
+        }
+    }
+
+    .cards {
+        padding: 7.5rem 2rem;
+
+        .cards-list {
+            display: flex;
+            justify-content: center;
+            gap: 3rem 0;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 100%;
+            background-color: var.$white;
+            filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.1));
+            transition: all 0.3s;
+
+            .card-bg {
+                width: 100%;
+                height: 222px;
+            }
+
+            .card-content {
+                padding: 2.4rem 3.1rem 3rem;
+
+                .card-title {
+                    font-weight: 700;
+                    margin-bottom: 2.4rem;
+                }
+
+                .card-description {
+                    line-height: 3rem;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                width: 500px;
+            }
+        }
+    }
+    .contact {
+        background-color: var.$purple-light;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 8.3rem 0 5.6rem;
+
+        & > h2 {
+            font-size: 3.2rem;
+        }
+
+        .contact-form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 90%;
+            gap: 2rem;
+            margin-top: 3.6rem;
+
+            .sr-only {
+                position: absolute;
+                height: 1px;
+                width: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip-path: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border-width: 0;
+            }
+
+            .contact-input {
+                width: 100%;
+                padding: 2rem 1.2rem;
+                border: none;
+                border-radius: 5px;
+                font-size: 1.8rem;
+                outline: none;
+            }
+
+            .textarea {
+                resize: none;
+                font-family: "Lato", sans-serif;
+                height: 165px;
+                margin-bottom: 3rem;
+                font-size: 1.8rem;
+            }
+
+            .contact-button {
+                width: 100%;
+                padding: 1.3rem 0;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    header {
+        .call {
+            width: 389px;
+            margin: 5.5rem 0 11.4rem;
+
+            .call-description {
+                margin: 1.7rem 0 4.5rem;
+            }
+        }
+    }
+
+    .cards {
+        padding: 15rem 11rem;
+
+        .card {
+            width: 450px;
+
+            .card-content {
+                padding: 2.4rem 2.8rem 3.1rem 3rem;
+
+                .card-title {
+                    margin-bottom: 2.6rem;
+                }
+            }
+        }
+    }
+
+    .contact {
+        padding: 8.3rem 0 8rem;
+
+        .contact-form {
+            width: 470px;
+            gap: 1.5rem;
+            margin-top: 6rem;
+
+            .contact-input {
+                padding: 2.2rem 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    header {
+        .call {
+            margin: 11.9rem 0 13.8rem;
+
+            .call-description {
+                font-size: 1.9rem;
+            }
+
+            button {
+                padding: 1.4rem 5rem 1.2rem 5.1rem;
+            }
+        }
+    }
+    .cards {
+        padding: 15rem 3rem;
+
+        .cards-list {
+            gap: 6.8rem 6rem;
+        }
+
+        .card {
+            width: 340px;
+        }
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-20px);
+    }
+}

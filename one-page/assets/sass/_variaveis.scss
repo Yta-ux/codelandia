@@ -1,0 +1,27 @@
+$blue: #63ecff;
+$red: #ff6363;
+$pink: #f363ff;
+$green: #63ff73;
+$yellow: #ffdd63;
+$purple: #6c63ff;
+$purple-light: #d7d4ff;
+$white: #fff;
+$white-200: #f9f9f9;
+$gray: #555555;
+$gray-light: #949799;
+$gray-dark: #2b2b2b;
+
+$colors: (
+    "blue": $blue,
+    "red": $red,
+    "pink": $pink,
+    "green": $green,
+    "yellow": $yellow,
+    "purple": $purple,
+);
+
+@each $color, $value in $colors {
+    .#{$color} {
+        background-color: $value;
+    }
+}

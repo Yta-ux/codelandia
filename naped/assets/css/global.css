@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Lexend+Deca&display=swap");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  display: none;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #282830;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #8257e6;
+}
+
+.title {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+}
+.title-line {
+  position: relative;
+  font-size: 2.4rem;
+  margin-bottom: 3.9rem;
+}
+.title-line .line {
+  position: absolute;
+  height: 3px;
+  width: 22%;
+  margin-top: 1.3rem;
+  background-color: #8257e6;
+}
+
+.logo {
+  flex: 1.5;
+  color: #8257e6;
+  font-size: 2.4rem;
+  text-decoration: none;
+}
+
+.recent {
+  margin-top: 10rem;
+}
+.recent-news {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.active {
+  overflow: hidden;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  background-color: #0c0c0c;
+  padding: 0 16rem;
+  color: #fefbfb;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.6rem;
+}
+header .menu {
+  display: flex;
+  gap: 6rem;
+  margin-right: 8.4rem;
+}
+header .menu-item {
+  position: relative;
+}
+header .menu-item .line {
+  position: absolute;
+  width: 0px;
+  margin-top: 0.5rem;
+  height: 3px;
+  background-color: #8257e6;
+  transition: width 0.5s;
+  border-radius: 5px;
+}
+header .menu-item:hover .line {
+  width: 105%;
+}
+header .menu-link {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #c4c4c4;
+  transition: 0.2s;
+}
+header .menu-link:hover {
+  color: #fefbfb;
+}
+header .account {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.4rem;
+  background: transparent;
+  border: none;
+  border: 1px solid #8257e6;
+  padding: 0.5rem 2rem;
+  border-radius: 30px;
+  color: #fefbfb;
+  transition: 0.2s;
+  cursor: pointer;
+}
+header .account:hover {
+  background-color: #8257e6;
+}
+
+.slogan {
+  width: 308px;
+  height: 230px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 1rem 2rem 1rem 1rem;
+  position: relative;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.slogan:hover {
+  transform: scale(1.05);
+}
+.slogan:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(360deg, #13131f, rgba(19, 19, 31, 0));
+  z-index: 1;
+  position: absolute;
+  inset: 0;
+}
+.slogan .content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+.slogan .btn {
+  width: 70px;
+  height: 20px;
+  font-family: "Lexend Deca";
+  font-size: 1.2rem;
+  background-color: #8257e6;
+  border-radius: 3px;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+}
+.slogan .description {
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+footer {
+  text-align: center;
+  margin-top: 9.5rem;
+}
+footer .copyright {
+  margin: 1.6rem auto 4rem;
+  font-weight: 500;
+  width: 50%;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+.modal {
+  display: none;
+}
+.modal .wrapper {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal .wrapper .content {
+  position: relative;
+  z-index: 3;
+  background-color: #282830;
+  width: 450px;
+  height: 250px;
+  padding: 1rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.modal .wrapper .content-text {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3.2rem;
+}
+.modal .wrapper .content-btn {
+  border: none;
+  background-color: #8257e6;
+  border-radius: 3px;
+  color: #fefbfb;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.modal .wrapper .content-btn:hover {
+  filter: brightness(0.8);
+}
+.modal .wrapper .overlay {
+  position: absolute;
+  inset: 0;
+  background-color: #13131f;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.modal.active {
+  display: flex;
+}
+
+/*# sourceMappingURL=global.css.map */

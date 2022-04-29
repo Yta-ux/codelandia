@@ -1,0 +1,218 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #2b6cb0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.link:hover {
+  color: #0076fd;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.6rem 0;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn:hover {
+  transform: scale(1.1);
+}
+
+@media (min-width: 0) {
+  body {
+    background-color: #f7fafc;
+    display: grid;
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    height: 100vh;
+    grid-template-columns: auto;
+    overflow: hidden;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .access {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+  }
+
+  .wrapper {
+    width: 350px;
+  }
+
+  .call {
+    font-family: "Merriweather", serif;
+  }
+
+  .call-title {
+    display: inline-block;
+    margin-top: 0.7rem;
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  .information {
+    margin-top: 2.8rem;
+  }
+  .information .label {
+    display: inline-block;
+    margin: 1.1rem 0;
+    font-size: 1.6rem;
+  }
+  .information .input {
+    border: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    padding: 1.7rem 0 1.6rem 2rem;
+    width: calc(100% - 2rem);
+    font-size: 1.4rem;
+    font-family: "Lato", sans-serif;
+  }
+  .information .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.8rem 0 2.6rem;
+    font-size: 1.4rem;
+  }
+  .information .options-reminder {
+    display: flex;
+    align-items: center;
+  }
+  .information .options-reminder input {
+    display: none;
+  }
+  .information .options-reminder label {
+    margin-left: 1.1rem;
+  }
+  .information .options-reminder .custom-checkbox {
+    width: 1.6rem;
+    height: 1.6rem;
+    border: 1px solid #1a202c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    transition: background-color 0.15s, border-color 0.15s;
+  }
+  .information .options-reminder .custom-checkbox::after {
+    content: "✔";
+    color: #fff;
+    transform: scale(0);
+    transition: 0.15s;
+  }
+  .information .options-reminder .checkbox:checked + .custom-checkbox {
+    background-color: #2b6cb0;
+    border-color: #2b6cb0;
+  }
+  .information .options-reminder .checkbox:checked + .custom-checkbox::after {
+    transform: scale(1);
+  }
+  .information .actions {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .information .actions-login {
+    background-color: #04c35c;
+  }
+  .information .actions-google {
+    background-color: #1a202c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .information .actions-google img {
+    margin-right: 1.1rem;
+  }
+  .information .actions-google span {
+    margin-top: 0.4rem;
+  }
+
+  .create {
+    position: absolute;
+    bottom: 5.2rem;
+  }
+}
+@media (min-width: 750px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    display: inherit;
+    place-self: center;
+    padding: 1.5rem;
+  }
+  .logo img {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

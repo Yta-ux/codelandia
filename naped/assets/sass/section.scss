@@ -1,0 +1,95 @@
+@use "global/variables" as *;
+
+main {
+    .cover {
+        margin-top: 9rem;
+        position: relative;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: {
+            top: 8.3rem;
+            bottom: 8.3rem;
+            left: 4rem;
+            right: 0;
+        }
+        &-title {
+            position: inherit;
+            z-index: 1;
+            font-size: 4.8rem;
+            margin-bottom: 1.5rem;
+        }
+        &-text {
+            position: inherit;
+            z-index: 2;
+            width: 50%;
+            font-size: 2rem;
+            line-height: 3.2rem;
+            font-weight: 500;
+            color: $white-200;
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            background-color: blue;
+            inset: 0;
+            background: linear-gradient(0.01deg, #13131f 0.01%, rgba(19, 19, 31, 0) 99.99%);
+        }
+    }
+
+    .search {
+        display: flex;
+        justify-content: space-between;
+        background-color: $gray-200;
+        padding: 1.5rem 2.5rem;
+        margin-top: 4.2rem;
+
+        &-input {
+            border: none;
+            background: transparent;
+            color: $white;
+            font-size: 2rem;
+            height: 30px;
+            width: calc(100% - 30px);
+            outline: none;
+        }
+    }
+
+    .catalogue {
+        margin: 10rem 0 6.2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem 4.5rem;
+        justify-content: center;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+            background-color: $gray-200;
+            font-weight: 600;
+            font-family: "Inter", sans-serif;
+            border-radius: 3px;
+            font-size: 1.8rem;
+            color: $white-200;
+            padding: 0.6rem 1.2rem;
+            cursor: pointer;
+            border: 2px solid $gray-200;
+            transition: 0.2s;
+
+            &:hover {
+                border-color: $purple-light;
+                color: $purple-light;
+            }
+        }
+    }
+}

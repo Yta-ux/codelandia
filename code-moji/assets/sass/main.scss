@@ -1,0 +1,325 @@
+@use "reset";
+@use "variaveis" as *;
+
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width: 0) {
+    .btn {
+        background-color: #ffffff;
+        border: none;
+        border: 2px solid $white-200;
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+    }
+
+    body {
+        background-color: $white;
+        font-family: "Inter", sans-serif;
+        height: 100vh;
+        font-size: 1.6rem;
+        overflow-x: hidden;
+        padding: 2rem 2% 0;
+        color: $gray;
+    }
+
+    .bg {
+        width: 100%;
+        height: 120%;
+        backdrop-filter: blur(15px);
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-logo {
+            display: none;
+        }
+        .user {
+            display: flex;
+            gap: 1rem;
+            &-search {
+                @extend .btn;
+                width: 5rem;
+                height: 5rem;
+                border-radius: 50%;
+            }
+
+            &-login {
+                @extend .btn;
+                padding: 1.5rem 4rem;
+                border-radius: 100px;
+                font-weight: 500;
+            }
+        }
+    }
+    .main {
+        position: relative;
+        margin: 5rem 0 4rem;
+
+        .call {
+            text-align: center;
+            margin-bottom: 5rem;
+
+            &-text {
+                font-size: 1.4rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                margin-bottom: 3rem;
+            }
+
+            &-title {
+                font-family: "Sen", sans-serif;
+                font-size: 5rem;
+                font-weight: 700;
+            }
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+            &-create {
+                @extend .btn;
+                color: $white;
+                background-color: $purple;
+                width: 250px;
+                height: 50px;
+                font-weight: 600;
+                font-size: 1.8rem;
+                border-radius: 10px;
+            }
+
+            &-view {
+                @extend .btn;
+                font-weight: 500;
+                font-size: 1.8rem;
+                width: 250px;
+                height: 50px;
+                border-radius: 10px;
+                border: 2px solid $white-200;
+            }
+        }
+
+        .people {
+            display: none;
+        }
+    }
+
+    .quotes {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4rem 3rem;
+
+        .quote {
+            &-title {
+                font-family: "Sen", sans-serif;
+                font-size: 2rem;
+                padding: 0 1.2rem;
+                border-left: 3px solid $purple;
+                line-height: 2.4rem;
+                margin-bottom: 2.3rem;
+            }
+
+            &-text {
+                line-height: 2.6rem;
+                font-style: italic;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .header {
+        justify-content: space-between;
+
+        &-logo {
+            display: block;
+            font-family: "Sen", sans-serif;
+            font-weight: 700;
+            font-size: 3.2rem;
+        }
+        .user {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+}
+
+@media (min-width: 600px) {
+    .header {
+        .user {
+            gap: 4.5rem;
+        }
+    }
+
+    .main {
+        margin: 10rem 0;
+
+        .call {
+            margin-bottom: 8rem;
+
+            &-text {
+                font-size: 1.8rem;
+                margin-bottom: 3rem;
+            }
+
+            &-title {
+                font-size: 5rem;
+            }
+        }
+
+        .actions {
+            gap: 5.2rem;
+
+            &-create {
+                width: auto;
+                height: auto;
+                padding: 1.5rem 4rem;
+                font-size: 2rem;
+            }
+
+            &-view {
+                padding: 1.5rem 4rem;
+                font-size: 2rem;
+                width: auto;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    .main {
+        margin: 10rem 0 30rem;
+
+        .call {
+            &-title {
+                font-size: 7rem;
+            }
+        }
+    }
+
+    .quotes {
+        padding: 6rem 7.5rem;
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        padding: 4.2rem 10% 0;
+    }
+}
+
+@media (min-width: 1000px) {
+    .main {
+        .people {
+            display: block;
+            position: absolute;
+            inset: 0;
+            z-index: -999;
+
+            & .position:nth-of-type(1) {
+                top: 100%;
+                right: 70%;
+            }
+            & .position:nth-of-type(2) {
+                top: 110%;
+                left: 10%;
+            }
+            & .position:nth-of-type(3) {
+                right: 70%;
+            }
+            & .position:nth-of-type(4) {
+                top: 5%;
+                left: 80%;
+            }
+            & .position:nth-of-type(5) {
+                top: 60%;
+                left: 90%;
+            }
+            .position {
+                position: absolute;
+                inset: 0;
+
+                &:nth-of-type(1) .figure::before {
+                    border-radius: 30px;
+                    background: $red-gradient;
+                }
+                &:nth-of-type(1) .figure::after {
+                    background: url("../images/boy1.svg");
+                }
+
+                &:nth-of-type(2) .figure::before {
+                    border-radius: 50%;
+                    background: $purple-gradient;
+                }
+
+                &:nth-of-type(2) .figure::after {
+                    background: url("../images/boy2.svg");
+                }
+
+                &:nth-of-type(3) .figure::before {
+                    transform: rotate(45deg);
+                    background: $blue-gradient;
+                }
+
+                &:nth-of-type(3) .figure::after {
+                    background: url("../images/girl3.svg");
+                }
+
+                &:nth-of-type(4) .figure::before {
+                    border-radius: 50%;
+                    background: $yellow-gradient;
+                }
+
+                &:nth-of-type(4) .figure::after {
+                    background: url("../images/girl2.svg");
+                }
+
+                &:nth-of-type(5) .figure::before {
+                    clip-path: polygon(50% 0%, 10% 70%, 90% 69%);
+                    background: $green-gradient;
+                }
+
+                &:nth-of-type(5) .figure::after {
+                    background: url("../images/girl1.svg");
+                }
+                .figure {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 200px;
+                        height: 200px;
+                        z-index: -1;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 150px;
+                        height: 150px;
+                        inset: 0;
+                    }
+                }
+            }
+        }
+    }
+}

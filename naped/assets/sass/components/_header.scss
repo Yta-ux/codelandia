@@ -1,0 +1,61 @@
+@use '../global/variables' as *;
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.6rem;
+
+    .menu {
+        display: flex;
+        gap: 6rem;
+        margin-right: 8.4rem;
+
+        &-item{
+            position: relative;
+            .line{
+                position: absolute;
+                width: 0px;
+                margin-top: .5rem;
+                height: 3px;
+                background-color: $purple-light;
+                transition: width .5s;
+                border-radius: 5px;
+
+            }
+
+            &:hover .line{
+                width: 105%;
+            }
+
+        }
+        &-link {
+            text-decoration: none;
+            font-size: 1.6rem;
+            color: $white-200;
+            transition: 0.2s;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+
+    .account {
+        font-family: inherit;
+        font-weight: inherit;
+        font-size: 1.4rem;
+        background: transparent;
+        border: none;
+        border: 1px solid $purple-light;
+        padding: 0.5rem 2rem;
+        border-radius: 30px;
+        color: $white;
+        transition: 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $purple-light;
+        }
+    }
+}

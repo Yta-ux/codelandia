@@ -1,0 +1,209 @@
+@use "variaveis" as *;
+
+.btn {
+    padding: 1.5rem 2.7rem;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: $white;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "B612", sans-serif;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+@media (min-width: 0) {
+
+    body {
+        background: $dark-bg url(../images/image.png) no-repeat center/cover;
+        background-blend-mode: darken;
+        font-family: "B612", sans-serif;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
+        font-weight: 700;
+    }
+
+    .call {
+        text-align: center;
+        margin-top: 4.5rem;
+
+        &-text {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &-title {
+            font-size: 9.6rem;
+        }
+    }
+
+    main {
+        display: inherit;
+        justify-content: center;
+        width: 90%;
+    }
+    .movie {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &-image {
+            width: 184px;
+            height: 267px;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .description {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        font-weight: 400;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        margin: 2.4rem 0 4.4rem;
+        font-size: 2.4rem;
+        gap: 1.5rem;
+
+        &-time {
+            display: inherit;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        &-note {
+            display: inherit;
+            list-style: none;
+            gap: 0.9rem;
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.1rem;
+
+        &-movie {
+            background-color: $blue;
+            border: 1px solid $blue;
+            width: 100%;
+        }
+
+        &-trailer {
+            background-color: $dark;
+            border: 1px solid $white;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .description {
+        font-size: 2rem;
+    }
+
+    .details {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        &-time {
+            display: inherit;
+            align-items: center;
+            gap: 1.2rem;
+        }
+
+        &-note {
+            display: inherit;
+            list-style: none;
+            gap: 0.9rem;
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    body {
+        background: $dark-bg url(../images/image.png) no-repeat center/cover;
+        background-blend-mode: darken;
+        font-family: "B612", sans-serif;
+        height: 100vh;
+        overflow: hidden;
+        color: $white;
+        display: flex;
+        flex-direction: column;
+        gap: 12.1rem;
+        font-weight: 700;
+    }
+
+    .call {
+        text-align: center;
+        margin-top: 4.5rem;
+
+        &-text {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        &-title {
+            font-size: 9.6rem;
+        }
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 68%;
+    }
+
+    .movie {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        &-image {
+            width: 184px;
+            height: 267px;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .information{
+        margin-left: 7rem;
+    }
+
+    .actions {
+        display: block;
+        &-movie {
+            background-color: $blue;
+            border: 1px solid $blue;
+            margin-right: 2.1rem;
+            width: auto;
+        }
+
+        &-trailer {
+            background-color: $dark;
+            border: 1px solid $white;
+            margin-bottom: 2rem;
+            width: auto;
+        }
+    }
+}
