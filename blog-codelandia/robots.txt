@@ -1,0 +1,4 @@
+Sitemap: https://blog-codelandia-red.vercel.app/sitemap.xml
+
+User-agent: *
+Allow: /
