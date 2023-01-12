@@ -1,6 +1,6 @@
 <p align="center">
     <a href="#-projeto">🖥 Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-    <a href="#-projeto">🎨 Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+    <a href="#-projeto">🔗 Links</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-tecnologias">👨‍💻 Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-executar-o-projeto">🖇 Execução do Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
     <a href="#-licença">📃 Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -20,16 +20,23 @@ As tecnologias usadas nesse projeto foram:
 - [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 
 
-## 🎨 Layout
-Link para o design do projeto: [Blog | Codelândia](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codelândia?node-id=0%3A1)
+## 🔗 Links
+
+🤖 Link para o projeto hospeado: [Blog | Codelândia](https://yta-ux.github.io/codelandia/blog-codelandia/)
+
+🎨 Link para o design do projeto: [Figma - Blog | Codelândia](https://www.figma.com/file/Yb9IBH56g7T1hdIyZ3BMNO/Desafios---Codel%C3%A2ndia?node-id=0%3A1&t=a3itppwhS5YjTWDP-0)
 
 
 ## 🖇 Executar o Projeto
 Para executar o projeto, apenas é preciso clonar ele em seu dispositivo:
 
-- Clone o repositório
+- Clone o repositório:
     ```bash
-    $ git clone https://github.com/Yta-ux/blog-codelandia.git
+    $ git clone https://github.com/Yta-ux/codelandia.git
+    ```
+- Acesse a pasta do projeto:
+    ```bash
+    $ cd codelandia/blog-codelandia
     ```
  
 ##  📃 Licença
